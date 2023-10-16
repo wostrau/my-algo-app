@@ -1,6 +1,7 @@
+// T = n => Linear Time Complexity => O(n)
 const getMin = (numbers) => {
     if (!numbers.length) throw new Error('Should not be an empty array!');
-    if (numbers.length === 1) return numbers[0];
+    // if (numbers.length === 1) return numbers[0];
 
     let currentMinimum = numbers[0];
 
@@ -13,6 +14,7 @@ const getMin = (numbers) => {
     return currentMinimum;
 };
 
+// T = n * n => Quadratic Time Complexity => O(n^2)
 const getMin2 = (numbers) => {
     if (!numbers.length) throw new Error('Should not be an empty array!');
 
